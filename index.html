@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to SoulLink</title>
-  </head>
-  <body>
-    <h1>Welcome to SoulLink</h1>
-    <p>This is the homepage.</p>
-    <p><a href="privacy_policy.html">Privacy Policy</a></p>
-    <p><a href="terms_of_service_content.html">Terms of Service</a></p>
-  </body>
+    <style>
+        .lang-buttons {
+            margin-bottom: 20px;
+        }
+        .lang-buttons button {
+            margin-right: 10px;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(lang) {
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="lang-buttons">
+        <button onclick="showContent('en')">English</button>
+        <button onclick="showContent('ko')">한국어</button>
+        <button onclick="showContent('jp')">日本語</button>
+    </div>
+
+    <div id="en" class="content active">
+        <h1>Welcome to SoulLink</h1>
+        <p>This is the homepage.</p>
+        <p><a href="privacy_policy.html">Privacy Policy</a></p>
+        <p><a href="terms_of_service_content.html">Terms of Service</a></p>
+    </div>
+
+    <div id="ko" class="content">
+        <h1>SoulLink에 오신 것을 환영합니다</h1>
+        <p>이곳은 홈페이지입니다.</p>
+        <p><a href="privacy_policy_ko.html">개인정보 처리방침</a></p>
+        <p><a href="terms_of_service_content_ko.html">이용 약관</a></p>
+    </div>
+
+    <div id="jp" class="content">
+        <h1>ようこそ、SoulLinkへ</h1>
+        <p>これはホームページです。</p>
+        <p><a href="privacy_policy_jp.html">プライバシーポリシー</a></p>
+        <p><a href="terms_of_service_content_jp.html">利用規約</a></p>
+    </div>
+</body>
 </html>
