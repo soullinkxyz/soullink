@@ -4,56 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service</title>
+    <style>
+        .lang-buttons {
+            margin-bottom: 20px;
+        }
+        .lang-buttons button {
+            margin-right: 10px;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(lang) {
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p>Welcome to Soullink! These terms of service ("Terms") govern your use of our mobile application (the "App"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree with these Terms, please do not use the App.</p>
+    <div class="lang-buttons">
+        <button onclick="showContent('en')">English</button>
+        <button onclick="showContent('ko')">한국어</button>
+        <button onclick="showContent('jp')">日本語</button>
+    </div>
 
-    <h2>1. Use of the App</h2>
-    <p>Eligibility: You must be at least 18 years old to use the App. By using the App, you represent and warrant that you are at least 18 years old and have the right, authority, and capacity to enter into and abide by these Terms.</p>
+    <div id="en" class="content active">
+        <h1>Terms of Service</h1>
+        <p>Welcome to Soullink! These terms of service ("Terms") govern your use of our mobile application (the "App"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree with these Terms, please do not use the App.</p>
 
-    <h2>2. User Conduct</h2>
-    <p>You agree not to use the App to:</p>
-    <ul>
-        <li>Violate any local, state, national, or international law or regulation.</li>
-        <li>Infringe the rights of any third party, including, but not limited to, intellectual property, privacy, or contractual rights.</li>
-        <li>Post any content that is defamatory, obscene, pornographic, abusive, or otherwise offensive.</li>
-        <li>Harass, abuse, or harm another person.</li>
-        <li>Use the App for any commercial purpose without our prior written consent.</li>
-    </ul>
+        <h2>1. Use of the App</h2>
+        <p>Eligibility: You must be at least 18 years old to use the App. By using the App, you represent and warrant that you are at least 18 years old and have the right, authority, and capacity to enter into and abide by these Terms.</p>
 
-    <h2>3. Content</h2>
-    <p><strong>Your Content:</strong> You retain all rights in, and are solely responsible for, the content you post to the App. By posting content to the App, you grant us a non-exclusive, transferable, sublicensable, worldwide, royalty-free license to use, copy, modify, distribute, publish, and process such content.</p>
-    <p><strong>Our Content:</strong> The App and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by SoullinkXYZ, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+        <h2>2. User Conduct</h2>
+        <p>You agree not to use the App to:</p>
+        <ul>
+            <li>Violate any local, state, national, or international law or regulation.</li>
+            <li>Infringe the rights of any third party, including, but not limited to, intellectual property, privacy, or contractual rights.</li>
+            <li>Post any content that is defamatory, obscene, pornographic, abusive, or otherwise offensive.</li>
+            <li>Harass, abuse, or harm another person.</li>
+            <li>Use the App for any commercial purpose without our prior written consent.</li>
+        </ul>
 
-    <h2>4. Termination</h2>
-    <p>We may terminate or suspend your account and access to the App at our sole discretion, without prior notice or liability, for any reason, including if you breach these Terms.</p>
+        <h2>3. Content</h2>
+        <p><strong>Your Content:</strong> You retain all rights in, and are solely responsible for, the content you post to the App. By posting content to the App, you grant us a non-exclusive, transferable, sublicensable, worldwide, royalty-free license to use, copy, modify, distribute, publish, and process such content.</p>
+        <p><strong>Our Content:</strong> The App and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by SoullinkXYZ, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
 
-    <h2>5. Limitation of Liability</h2>
-    <p>In no event shall SoullinkXYZ, its directors, employees, or agents, be liable to you for any direct, indirect, incidental, special, punitive, or consequential damages whatsoever resulting from any:</p>
-    <ul>
-        <li>Errors, mistakes, or inaccuracies of content.</li>
-        <li>Personal injury or property damage, of any nature whatsoever, resulting from your access to and use of the App.</li>
-        <li>Any unauthorized access to or use of our servers and/or any personal information stored therein.</li>
-        <li>Any interruption or cessation of transmission to or from the App.</li>
-        <li>Any bugs, viruses, trojan horses, or the like which may be transmitted to or through the App by any third party.</li>
-        <li>Any loss or damage of any kind incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available via the App, whether based on warranty, contract, tort, or any other legal theory, and whether or not the company is advised of the possibility of such damages.</li>
-    </ul>
+        <h2>4. Termination</h2>
+        <p>We may terminate or suspend your account and access to the App at our sole discretion, without prior notice or liability, for any reason, including if you breach these Terms.</p>
 
-    <h2>6. Governing Law</h2>
-    <p>These Terms shall be governed and construed in accordance with the laws of the State of [Your State], without regard to its conflict of law provisions.</p>
+        <h2>5. Limitation of Liability</h2>
+        <p>In no event shall SoullinkXYZ, its directors, employees, or agents, be liable to you for any direct, indirect, incidental, special, punitive, or consequential damages whatsoever resulting from any:</p>
+        <ul>
+            <li>Errors, mistakes, or inaccuracies of content.</li>
+            <li>Personal injury or property damage, of any nature whatsoever, resulting from your access to and use of the App.</li>
+            <li>Any unauthorized access to or use of our servers and/or any personal information stored therein.</li>
+            <li>Any interruption or cessation of transmission to or from the App.</li>
+            <li>Any bugs, viruses, trojan horses, or the like which may be transmitted to or through the App by any third party.</li>
+            <li>Any loss or damage of any kind incurred as a result of the use of any content posted, emailed, transmitted, or otherwise made available via the App, whether based on warranty, contract, tort, or any other legal theory, and whether or not the company is advised of the possibility of such damages.</li>
+        </ul>
 
-    <h2>7. Changes to These Terms</h2>
-    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+        <h2>6. Governing Law</h2>
+        <p>These Terms shall be governed and construed in accordance with the laws of the State of [Your State], without regard to its conflict of law provisions.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about these Terms, please contact us at:</p>
-    <address>
-        SoullinkXYZ<br>
-        [Your Address]<br>
-        [City, State, Zip Code]<br>
-        [Email Address]<br>
-        [Phone Number]
-    </address>
+        <h2>7. Changes to These Terms</h2>
+        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions about these Terms, please contact us at:</p>
+        <address>
+            SoullinkXYZ<br>
+            [Your Address]<br>
+            [City, State, Zip Code]<br>
+            [Email Address]<br>
+            [Phone Number]
+        </address>
+    </div>
+
+    <div id="ko" class="content">
+        <h1>서비스 이용 약관</h1>
+        <p>소울링크에 오신 것을 환영합니다! 본 서비스 이용 약관("약관")은 귀하가 당사의 모바일 애플리케이션("앱")을 사용하는 것을 규율합니다. 앱에 접근하거나 앱을 사용함으로써 귀하는 본 약관에 동의하는 것입니다. 본 약관에 동의하지 않는 경우 앱을 사용하지 마십시오.</p>
+
+        <h2>1. 앱 사용</h2>
+        <p>자격: 귀하는 최소 18세 이상이어야 앱을 사용할 수 있습니다. 앱을 사용함으로써 귀하는 최소 18세 이상이며 본 약관을 준수할 수 있는 권리, 권한 및 능력이 있음을 진술하고 보증합니다.</p>
+
+        <h2>2. 사용자 행동</h2>
+        <p>귀하는 앱을 사용하여 다음을 하지 않기로 동의합니다:</p>
+        <ul>
+            <li>현지, 주, 국가 또는 국제법이나 규정을 위반하는 행위.</li>
+            <li>제3자의 권리를 침해하는 행위, 여기에는 지적 재산권, 개인정보 보호권, 계약상 권리가 포함되지만 이에 국한되지 않습니다.</li>
+            <li>명예훼손적, 외설적, 포르노적, 학대적 또는 기타 불쾌한 내용을 게시하는 행위.</li>
+            <li>다른 사람을 괴롭히거나, 학대하거나, 해를 끼치는 행위.</li>
+            <li>당사의 사전 서면 동의 없이 상업적 목적으로 앱을 사용하는 행위.</li>
+        </ul>
+
+        <h2>3. 콘텐츠</h2>
+        <p><strong>귀하의 콘텐츠:</strong> 귀하는 앱에 게시한 콘텐츠에 대한 모든 권리를 보유하며, 이에 대한 책임이 있습니다. 앱에 콘텐츠를 게시함으로써 귀하는 당사에 해당 콘텐츠를 사용, 복사, 수정, 배포, 게시 및 처리할 수 있는 비독점적, 양도 가능, 서브라이센스 가능, 전 세계적, 로열티 무료 라이센스를 부여합니다.</p>
+        <p><strong>당사의 콘텐츠:</strong> 앱과 그 전체 콘텐츠, 기능 및 기능(모든 정보, 소프트웨어, 텍스트, 디스플레이, 이미지, 비디오 및 오디오, 디자인, 선택 및 배열을 포함하되 이에 국한되지 않음)은 SoullinkXYZ, 그 라이센서 또는 해당 자료의 기타 제공자가 소유하며 저작권, 상표, 특허, 영업 비밀 및 기타 지적 재산권 또는 소유권 법률에 의해 보호됩니다.</p>
+
+        <h2>4. 종료</h2>
+        <p>당사는 귀하가 본 약관을 위반한 경우를 포함하여 어떠한 이유로든 사전 통지 없이 단독 재량에 따라 귀하의 계정 및 앱 접근을 종료하거나 일시 중지할 수 있습니다.</p>
+
+        <h2>5. 책임의 제한</h2>
+        <p>SoullinkXYZ, 그 이사, 직원 또는 대리인은 어떤 경우에도 다음으로 인해 발생하는 직접적, 간접적, 부수적, 특별, 징벌적 또는 결과적 손해에 대해 귀하에게 책임을 지지 않습니다:</p>
+        <ul>
+            <li>콘텐츠의 오류, 실수 또는 부정확성.</li>
+            <li>앱 접근 및 사용으로 인한 개인 상해 또는 재산 피해.</li>
+            <li>당사의 서버에 대한 무단 접근 또는 사용 및/또는 저장된 모든 개인 정보.</li>
+            <li>앱으로의 또는 앱으로부터의 전송 중단 또는 중단.</li>
+            <li>앱을 통해 또는 앱을 통해 전송될 수 있는 모든 버그, 바이러스, 트로이 목마 또는 이와 유사한 것.</li>
+            <li>본 약관에 명시된 보증, 계약, 불법 행위 또는 기타 법적 이론에 기반한 콘텐츠 사용으로 인해 발생하는 모든 손실 또는 손해, 그리고 회사가 그러한 손해 가능성을 알고 있는지 여부에 관계없이.</li>
+        </ul>
+
+        <h2>6. 준거법</h2>
+        <p>본 약관은 대한민국 법률에 따라 규율되고 해석됩니다.</p>
+
+        <h2>7. 약관 변경</h2>
+        <p>당사는 단독 재량에 따라 언제든지 본 약관을 수정하거나 대체할 권리를 보유합니다. 수정이 중요한 경우, 새로운 약관이 발효되기 최소 30일 전에 통지를 제공할 것입니다. 중요한 변경 사항이 무엇인지는 당사의 단독 재량에 따라 결정됩니다.</p>
+
+        <h2>8. 문의하기</h2>
+        <p>본 약관에 대해 질문이 있는 경우, 아래로 문의하십시오:</p>
+        <address>
+            SoullinkXYZ<br>
+            [Your Address]<br>
+            [City, State, Zip Code]<br>
+            [Email Address]<br>
+            [Phone Number]
+        </address>
+    </div>
+
+    <div id="jp" class="content">
+        <h1>利用規約</h1>
+        <p>ソウルリンク(Soullink)へようこそ！本利用規約（以下、「規約」）は、お客様が当社のモバイルアプリケーション（以下、「アプリ」）を使用する際の規定です。アプリにアクセスまたは使用することにより、お客様は本規約に拘束されることに同意したことになります。本規約に同意しない場合は、アプリを使用しないでください。</p>
+
+        <h2>1. アプリの使用</h2>
+        <p>資格: アプリを使用するには、少なくとも18歳である必要があります。アプリを使用することにより、お客様は少なくとも18歳であり、本規約を遵守する権利、権限、および能力があることを表明および保証します。</p>
+
+        <h2>2. ユーザーの行動</h2>
+        <p>お客様は、次の行為を行わないことに同意します:</p>
+        <ul>
+            <li>現地、州、国、または国際法や規制に違反する行為。</li>
+            <li>第三者の権利を侵害する行為、ここには知的財産権、プライバシー権、契約上の権利が含まれますが、これに限定されません。</li>
+            <li>名誉毀損的、わいせつ、ポルノ、虐待的、またはその他不快な内容を投稿する行為。</li>
+            <li>他人を嫌がらせ、虐待、または傷つける行為。</li>
+            <li>当社の事前の書面による同意なしに、商業目的でアプリを使用する行為。</li>
+        </ul>
+
+        <h2>3. コンテンツ</h2>
+        <p><strong>お客様のコンテンツ:</strong> お客様は、アプリに投稿したコンテンツに関するすべての権利を保持し、そのコンテンツに対して責任を負います。アプリにコンテンツを投稿することにより、お客様は当社に対して、当該コンテンツを使用、複製、変更、配布、公開、および処理するための非独占的、譲渡可能、サブライセンス可能、世界的、ロイヤリティフリーのライセンスを付与します。</p>
+        <p><strong>当社のコンテンツ:</strong> アプリおよびその全内容、機能、および機能（すべての情報、ソフトウェア、テキスト、ディスプレイ、画像、ビデオおよびオーディオ、デザイン、選択および配置を含むがこれに限定されない）は、SoullinkXYZ、そのライセンサー、または当該資料のその他の提供者が所有し、著作権、商標、特許、営業秘密、およびその他の知的財産権または所有権法によって保護されています。</p>
+
+        <h2>4. 終了</h2>
+        <p>当社は、お客様が本規約に違反した場合を含め、理由の如何を問わず、通知なしに独自の裁量でお客様のアカウントおよびアプリへのアクセスを終了または一時停止することができます。</p>
+
+        <h2>5. 責任の制限</h2>
+        <p>いかなる場合も、SoullinkXYZ、その取締役、従業員、または代理人は、次の結果として生じる直接的、間接的、偶発的、特別、懲罰的または結果的損害について、お客様に対して責任を負いません:</p>
+        <ul>
+            <li>コンテンツのエラー、誤りまたは不正確性。</li>
+            <li>アプリへのアクセスおよび使用による人身傷害または財産損害。</li>
+            <li>当社のサーバーへの不正アクセスまたは使用および/または保存されたすべての個人情報。</li>
+            <li>アプリへのまたはアプリからの送信の中断または停止。</li>
+            <li>アプリを通じてまたはアプリを通じて送信される可能性のあるバグ、ウイルス、トロイの木馬または同様のもの。</li>
+            <li>保証、契約、不法行為またはその他の法的理論に基づくコンテンツの使用の結果として生じるすべての損失または損害、会社がそのような損害の可能性について知らされているかどうかに関係なく。</li>
+        </ul>
+
+        <h2>6. 準拠法</h2>
+        <p>本規約は、日本法に従って規定および解釈されるものとします。</p>
+
+        <h2>7. 規約の変更</h2>
+        <p>当社は、独自の裁量でいつでも本規約を修正または置き換える権利を留保します。修正が重要である場合、新しい規約が発効する少なくとも30日前に通知を提供します。重要な変更が何であるかは、当社の独自の裁量で決定されます。</p>
+
+        <h2>8. お問い合わせ</h2>
+        <p>本規約に関する質問がある場合は、以下にお問い合わせください:</p>
+        <address>
+            SoullinkXYZ<br>
+            [Your Address]<br>
+            [City, State, Zip Code]<br>
+            [Email Address]<br>
+            [Phone Number]
+        </address>
+    </div>
 </body>
 </html>
